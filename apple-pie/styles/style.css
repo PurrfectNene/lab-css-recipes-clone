@@ -101,6 +101,31 @@ body {
   margin-top: 50px;
 }
 
-.direction{
-  
+.directions {
+  color: #696969;
+  font-size: 30px;
+  margin: 100px 900px;
+}
+
+.directions p {
+  width: 37%;
+  margin: 40px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-weight: bold;
+}
+
+.directions ol{
+  counter-reset: list;
+  margin-left: 60px;
+}
+
+.directions ol > li {
+  list-style: none;
+}
+
+.directions ol > li:before {
+  content: counter(list) ") ";
+  counter-increment: list;
 }
